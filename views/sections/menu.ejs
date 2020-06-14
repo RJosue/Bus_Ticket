@@ -1,0 +1,27 @@
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="images/t-bus.png" alt="logo" style="width:30px;"> Online Bus Tickets
+          </a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item <% if (pagina == 2) { %> active <% } %> ">
+                <a class="nav-link" href="Acerca">Acerca de</a>
+              </li>
+              <li class="nav-item <% if (pagina == 3) { %> active <% } %>">
+                <a class="nav-link" href="Destino">Destinos</a>
+              </li>
+              <li class="nav-item <% if (pagina == 4) { %> active <% } %>">
+                <a class="nav-link" href="Listado">Horarios</a>
+              </li>
+              <li class="nav-item <% if (pagina == 5) { %> active <% } %>">
+                <a class="nav-link" href="Contactenos">Contactenos</a>
+              </li>            
+            </ul>
+          </div>
+        </div>
+      </nav>

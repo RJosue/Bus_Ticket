@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Online Bus Tickets</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <%- include ('sections/menu') %> <!-- se incluye el menú -->
+
+    <!-- se incluye el contenido dependiendo de la opción del menú -->
+    <% switch(pagina) {
+      case 1: %>
+    <%- include ('sections/pagina-inicial') %>
+    <% break
+      case 2: %>
+    <%- include ('sections/acerca') %>
+    <% break
+      case 3: %>
+    <%- include ('sections/destinos') %>
+    <% break
+      case 4: %>
+    <%- include ('sections/horarios') %>
+    <% break
+      case 5: %>
+    <%- include ('sections/contactenos') %>
+    <% break
+      default: %>
+    <%- include ('sections/404') %>
+    <% break  } %>
+   
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019 <br> <a href="http://disclaimer.innovacion.gob.pa/" target="_blank"> Declaración de Privacidad </a> </p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
